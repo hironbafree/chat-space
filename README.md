@@ -9,7 +9,7 @@
 - has_many :tweets
 - has_many :comments
 
-## tweetsテーブル
+## sendテーブル
 |Column|Type|Options|
 |------|----|-------|
 |image|text||
