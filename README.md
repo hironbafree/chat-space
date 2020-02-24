@@ -16,13 +16,14 @@
 |image|text||
 |text|text||
 |user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
 ### Association
 - belongs_to :user
-- has_many :groups_users
+- belongs_to_:group
 
 ##groupsテーブル
-|name|integer||
--
+|name|string||
+-belongs_to :user
 ## groups_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
@@ -30,14 +31,6 @@
 |group_id|string|null: false,foreign_key: true|
 ### Association
 belongs_to :user
+belongs_to :group
 
 
-<!-- ## commentsテーブル
-|Column|Type|Options|
-|------|----|-------|
-|text|text|null: false|
-|user_id|integer|null: false, foreign_key: true|
-|tweet_id|integer|null: false, foreign_key: true|
-### Association
-- belongs_to :text
-- belongs_to :user -->
