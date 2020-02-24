@@ -9,7 +9,7 @@
 - has_many :tweets
 - has_many :comments
 
-## sendテーブル
+## textテーブル
 |Column|Type|Options|
 |------|----|-------|
 |image|text||
@@ -26,5 +26,5 @@
 |user_id|integer|null: false, foreign_key: true|
 |tweet_id|integer|null: false, foreign_key: true|
 ### Association
-- belongs_to :tweet
+- belongs_to :text
 - belongs_to :user
