@@ -20,12 +20,12 @@
 ### Association
 - belongs_to :user
 - belongs_to :group
-- has_many :groups_users
 
 ##　groupsテーブル
 |name|string|null: false|
-- has_many :massages
+- has_many :messages
 - has_many :users though: :groups_users
+- has_many :groups_users
 ## groups_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
@@ -33,4 +33,4 @@
 |group_id|string|null: false,foreign_key: true|
 ### Association
 - belongs_to :user
-- belongs_to :user
+- belongs_to :group
