@@ -21,7 +21,7 @@
 - belongs_to :user
 - belongs_to :group
 
-##groupsテーブル
+##　groupsテーブル
 |name|string||
 -has_many :users
 -has_many :users though: :groups_users
@@ -34,5 +34,8 @@
 ### Association
 belongs_to :user
 belongs_to :group
-
+users = users.find()
+groups = Groups.find()
+user.groups
+group.users
 
