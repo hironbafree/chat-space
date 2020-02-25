@@ -22,13 +22,12 @@
 - belongs_to :group
 
 ##　groupsテーブル
-|name|string||
--has_many :users
+|name|string|null: false,foreign_key: true|
+-has_many :massages
 -has_many :users though: :groups_users
 ## groups_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-
 |user_id|string|null: false,foreign_key: true|
 |group_id|string|null: false,foreign_key: true|
 ### Association
@@ -36,6 +35,3 @@ belongs_to :user
 belongs_to :group
 users = users.find()
 groups = Groups.find()
-user.groups
-group.users
-
