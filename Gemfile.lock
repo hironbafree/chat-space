@@ -102,19 +102,15 @@ GEM
     minitest (5.14.0)
     mysql2 (0.5.3)
     nio4r (2.5.2)
-    nokogiri (1.10.8)
+    nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
-<<<<<<< HEAD
     pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
     pry-rails (0.3.9)
       pry (>= 0.10.4)
-    puma (3.12.2)
-=======
     puma (3.12.4)
->>>>>>> a903f407f34a9c2e551c2a9c214f1f67f2a10305
     rack (2.2.2)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -210,12 +206,8 @@ DEPENDENCIES
   jquery-rails
   listen (~> 3.0.5)
   mysql2 (>= 0.3.18, < 0.6.0)
-<<<<<<< HEAD
   pry-rails
-  puma (~> 3.0)
-=======
   puma (~> 3.12)
->>>>>>> a903f407f34a9c2e551c2a9c214f1f67f2a10305
   rails (~> 5.0.7, >= 5.0.7.2)
   sass-rails (~> 5.0)
   spring
