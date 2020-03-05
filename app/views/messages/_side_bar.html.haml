@@ -10,8 +10,10 @@
           = icon('fas', 'cog', class: 'icon')
   -current_user.groups.each do |group|
     .group
-      =link_to '#' do
+      = link_to group_messages_path(group) do
         .side-body
           =group.name
         .side-body-two
           まだメッセージがありません
+        .group__message
+          = group.show_last_message
